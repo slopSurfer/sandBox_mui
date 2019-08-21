@@ -1,0 +1,62 @@
+.App {
+  font-family: sans-serif;
+  /* text-align: center; */
+}
+
+/* for the internal of Observation Card */
+.boxTwo {
+  display: grid;
+  /* display: flex; */
+  padding: 0px;
+  grid-template-columns: 3fr 6fr 3fr;
+  grid-auto-rows: 100px;
+  row-gap: 0px;
+  /* border: 1px solid; */
+  align-items: center;
+  cursor: pointer;
+}
+
+.column1 {
+  /* background-color: #61dafb; */
+  /* border: 1px solid; */
+  justify-self: center;
+}
+
+.column2 {
+  /* background-color: #74e68c; */
+  align-self: flex-start;
+  margin-left: 10%;
+  /* justify-self: left;
+  align-content: flex-start; */
+}
+
+/* .columnCenterContent {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%
+} */
+
+.redBc {
+  background-color: crimson;
+}
+
+.blueBc {
+  background-color: aqua;
+}
+
+@media screen and (max-width: 700px) {
+  .showOnDesktop {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 701px) {
+  .showOnMobile {
+    display: none;
+  }
+}
+
+/* for iOS scrolling */
+* {
+  -webkit-overflow-scrolling: touch;
+}
